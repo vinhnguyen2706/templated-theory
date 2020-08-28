@@ -1,0 +1,256 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(./images/banner.jpg);
+  width: 100%;
+  height: 60vh;
+  background-position: top;
+  color: white;
+  overflow: hidden;
+  border-top: 0.5em solid #5385c1;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header .menu {
+  padding-top: 4em;
+  display: flex;
+}
+.header .menu .menu-left,
+.header .menu .menu-right {
+  display: flex;
+  flex: 1;
+}
+.header .menu .menu-right {
+  justify-content: flex-end;
+}
+.menu .menu-right ul {
+  display: flex;
+}
+.header .menu .menu-right a {
+  padding: 0 0.75em;
+  color: #d4e0ef;
+  font-size: 0.8em;
+  transition: color 0.2s ease-in-out;
+}
+.header .menu .menu-right a:hover {
+  color: white;
+}
+.header .menu .menu-right span {
+  display: none;
+}
+.menu .menu-left a {
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+}
+.banner {
+  padding: 12em 0 10em 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner h1 {
+  font-size: 3.5em;
+  font-weight: 100;
+  color: #fff;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+}
+.banner p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 1.75em;
+}
+#menu-mobile {
+  width: 280px;
+  padding: 20px;
+  height: 100%;
+  background-color: #5385c1;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  z-index: 2;
+  transition: right 0.25s;
+}
+#menu-mobile a {
+  color: #d4e0ef;
+  line-height: 50px;
+  display: block;
+  padding: 1em 0;
+}
+#menu-mobile ul li:not(:last-child) a {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+}
+#menu-mobile .position {
+  position: relative;
+}
+#menu-mobile .position span {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  font-size: 25px;
+  color: #d4e0ef;
+  cursor: pointer;
+}
+/* css chung cac the trong body */
+div.introduce h3,
+div.image h4 {
+  color: #5385c1;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  font-size: 1.35em;
+}
+div.introduce p,
+div.image p,
+div.final p {
+  margin: 0 0 4em 0;
+  color: #9a9a9a;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+div.introduce a,
+div.image a {
+  color: white;
+  background-color: #5385c1;
+  padding: 1em 1.5em;
+  font-weight: 600;
+}
+/* css introduce */
+.content {
+  width: 100%;
+}
+div.introduce {
+  display: flex;
+  width: 82%;
+  margin: 0 auto;
+}
+div.introduce {
+  padding: 6em 0;
+}
+div.introduce h3 {
+  height: 20%;
+}
+div.introduce .list {
+  padding: 0 3em;
+}
+div.introduce .list:nth-child(2) {
+  border: 1px solid #dbdbdb;
+  border-color: transparent #dbdbdb transparent #dbdbdb;
+  padding: 0 3em 0 3em;
+}
+/* css phần có 4 ảnh giữa trang */
+div.renowned {
+  width: 100%;
+  padding: 6em 0;
+  background-color: #5385c1;
+  text-align: center;
+}
+div.renowned h2 {
+  color: white;
+  font-size: 2.75em;
+  font-weight: 100;
+}
+div.renowned > p {
+  color: #bacee6;
+  font-size: 1em;
+  margin-bottom: 4em;
+  margin-top: 0.7em;
+}
+div.renowned .renowned-image {
+  display: flex;
+  justify-content: space-around;
+  width: 82%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+div.magna img {
+  border-radius: 50%;
+}
+div.magna {
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+div.magna .name {
+  font-size: 1.35em;
+  color: white;
+  margin-top: 1em;
+}
+div.magna .describe {
+  color: #bacee6;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+div.final .text {
+  text-align: center;
+  margin-top: 5em;
+}
+div.final h2 {
+  color: #5385c1;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 1.5;
+  margin: 0 0 0.5em 0;
+}
+/* css 2 ảnh cuối  */
+.final {
+  width: 72%;
+  margin: 0 auto;
+}
+.final .image {
+  display: flex;
+}
+.final .image .left-image {
+  padding-right: 50px;
+}
+.final .image .left-image img {
+  width: 100%;
+}
+.final .image .right-image img {
+  width: 100%;
+}
+/* css footer  */
+footer {
+  border-top: 1px solid #dbdbdb;
+  height: 100%;
+  width: 72%;
+  margin: 7% auto 0 auto;
+  display: flex;
+  padding: 50px 0;
+}
+footer .left-footer {
+  color: #bbb;
+  font-size: 0.8em;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+footer .left-footer a {
+  color: #bbb;
+}
+footer .right-footer {
+  margin-left: auto;
+  padding-left: 10px;
+}
+footer .right-footer ul {
+  display: flex;
+}
+footer .right-footer ul li {
+  padding-right: 20px;
+}
+footer .right-footer ul li a {
+  color: #5385c1;
+}
