@@ -1,1 +1,1 @@
-# templated-theory
+# templated-theory: https://templated.co/theory
